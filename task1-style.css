@@ -17,17 +17,20 @@ p {
 img {
     width: 100%;
 }
-#grid {
+#grid-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 14px;
     gap: 14px;
 }
+.grid-column {
+    grid-template-rows: repeat(3, min-content);
+    display: grid;
+    gap: 14px;
+}
 .news {
-    position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: auto;
 }
 .text {
     background-color: rgb(245, 245, 245);
